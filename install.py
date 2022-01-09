@@ -4,7 +4,7 @@ try:
     file = open('main.py','x')
 except FileExistsError:
     print('The file already exists, do you wish to reinstall?')
-    userin = 'y'#input('(y/n)')
+    userin = input('(y/n)')
     if userin not in 'yY':
         quit()
     os.remove('main.py')
